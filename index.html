@@ -5,25 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cards.css">
+    <link rel="stylesheet" href="mades.css">   
 </head>
 <body>
-<nav class="navbar">
-  <div class="nav-gol">
-    <a href="#" class="nav-logo">q<span>PC</span></a>
-    
-    <ul class="nav-links">
-      <li><a href="#">Головна</a></li>
-      <li><a href="#">Зібрати</a></li>
-      <li><a href="#">Послуги</a></li>
-      <li><a href="#">Про нас</a></li>
-    </ul>
-
-    <div class="nav-actions">
-      <a href="#" class="btn-contact">Замовити</a>
+  <nav class="navbar">
+    <div class="nav-gol">
+      <a href="#" class="nav-logo">q<span>PC</span></a>
+      <ul class="nav-links">
+        <li><a href="#">Головна</a></li>
+        <li><a href="#">Зібрати</a></li>
+        <li class="dropdown">
+          <a href="#">Послуги</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Про нас</a></li>
+      </ul>
     </div>
-  </div>
-</nav>
+  </nav>
 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 
   <div class="carousel-indicators">
@@ -63,9 +74,66 @@
   </button>
 </div>
 <!--<button class="Drop-page" type="button">Детальніше</button> -->
-<div class="PC-container">
-  <img src="/image/PC1.png" class="d-block" height="350px" width="350px">
+<div class="Mades-qpc">
+  <h1 style="font-family: Dela Gothic One, sans-serif;">Готові збірки</h1>
 </div>
+
+<!-- Карточки -->
+<div class="Card-conteiner">
+<div class="PC-card" style="width: 18rem;">
+  <img src="/image/PC1.png" class="card-img-top" alt="Карточка 1">
+    <h5 class="card-title">Arctic Storm</h5>
+    <p class="card-text">Ця флагманська біла збірка на базі RTX 4090 та Core i9 забезпечує максимальну продуктивність у 4K, поєднуючи передове рідинне охолодження з бездоганною панорамною естетикою.</p>
+    <h6 class="card-price">45000грн</h6>
+  </div>
+  <div class="PC-card" style="width: 18rem;">
+    <img src="/image/PC2.png" class="card-img-top" alt="Карточка 1">
+      <h5 class="card-title">Eclipse</h5>
+      <p class="card-text">Ця надійна збірка має шестиядерний процесор i5-12400F, відеокарту RTX 3060, 16 ГБ DDR4 ОЗП в чорному корпусі із загартованим склом — стабільність та стриманість для геймінгу.</p>
+      <h6 class="card-price">45000грн</h6>
+    </div>
+  <div class="PC-card" style="width: 18rem;">
+    <img src="/image/PC3.png" class="card-img-top" alt="Карточка 1">
+      <h5 class="card-title">Spirit</h5>
+      <p class="card-text">Збалансована збірка на базі GTX 1660 Super — ідеальний вхід у світ геймінгу. Темний лаконічний корпус забезпечить стабільну роботу в популярних хітах та робочих задачах.</p>
+      <h6 class="card-price">45000грн</h6>
+    </div>
+</div>
+<section class="projects-section">
+  <div class="projects-header">
+    <div class="header-text">
+      <h2>Виконані проекти:</h2>
+      <a href="#">Гранд-Проект "Arctic"</a>
+    </div>
+  </div>
+  <div class="slider-container" id="slider">
+    <div class="project-card">
+      <div class="img-wrapper orange-bg">
+        <img src="/image/PC-carousel.png" alt="HPC Project">
+      </div>
+      <div class="card-content">
+        <p>Проект "Glacier"</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="img-wrapper green-bg">
+        <img src="/image/PC-carousel2.png" alt="Ampere Project">
+      </div>
+      <div class="card-content">
+        <p>Проект "Arctic Minimalist"</p>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="img-wrapper yellow-bg">
+        <img src="/image/PC-carousel3.png" alt="Data Lake Project">
+      </div>
+      <div class="card-content">
+        <p>Проект "Blizzard"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
 </body>

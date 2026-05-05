@@ -1,0 +1,38 @@
+.PC-card {
+    display: inline-block;
+    border: 1px solid rgb(48, 48, 48); 
+    border-radius: 20px;
+    background-color: rgb(19, 19, 19);
+}
+.card-img-top {
+    border-radius: 20px;
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+.card-title {
+    padding: 10px;
+    padding-bottom: 5px;
+    margin: 0;
+    color: white;
+}
+.card-text {
+    padding: 10px;
+    padding-bottom: 5px;
+    line-height: 1.4;
+    color: rgb(187, 186, 186);
+    flex-grow: 1;
+}
+.card-price {
+    padding: 15px 10px;
+    padding-bottom: 5px;
+    color: rgb(187, 186, 186);
+}
+.Card-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
