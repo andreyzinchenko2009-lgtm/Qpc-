@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(19, 19, 19);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.navbar {
+  background-color: #121212; 
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-gol {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: #adadad;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-links a:hover {
+  color: #fff;
+}
+.btn-contact {
+  background-color: #382a2a;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.btn-contact:hover {
+  background-color: #511111;
+  transform: translateY(-2px);
+}
+.carousel-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(5px);
+}
+.carousel-item {
+  transition: transform 0.8s ease-in-out;
+}
+
+.carousel-caption {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.7s ease-in-out;
+}
+.active .carousel-caption {
+    opacity: 1;
+    transform: translateY(0);
+}
