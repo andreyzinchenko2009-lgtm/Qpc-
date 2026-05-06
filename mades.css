@@ -26,7 +26,7 @@ body {
     margin-bottom: 30px;
 }
 .header-text{
-    margin-top: 30px;
+    margin-top: 200px;
 }
 .header-text h2 {
     font-size: 2rem;
@@ -37,21 +37,6 @@ body {
     text-decoration: none;
     font-size: 0.9rem;
 }
-.nav-btn {
-    background: #222;
-    color: white;
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 24px;
-    margin-left: 10px;
-    transition: 0.3s;
-}
-
-.nav-btn:hover { background: #333; }
-
 .slider-container {
     display: flex;
     gap: 20px;
@@ -66,7 +51,6 @@ body {
     overflow: hidden;
     flex-shrink: 0;
 }
-
 .img-wrapper {
     height: 250px;
     display: flex;
@@ -79,5 +63,11 @@ body {
     object-fit: cover;
     display: block;
 }
-.card-content { padding: 20px; }
-.card-content p { margin: 0; font-size: 1.1rem; line-height: 1.4; }
+.card-content { 
+    padding: 20px; 
+}
+.card-content p { 
+    margin: 0;
+    font-size: 1.1rem;
+    line-height: 1.4;
+ }
