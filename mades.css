@@ -5,19 +5,6 @@
     justify-content: start;
     color: #fff;
 }
-:root {
-  --bg-color: #0b0b0b;
-  --card-bg: #161616;
-  --accent-color: #a3ff00; /* Зеленый из примера */
-}
-
-body {
-  background-color: var(--bg-color);
-  color: white;
-  font-family: sans-serif;
-  margin: 0;
-  padding: 40px;
-}
 
 .projects-header {
     display: flex;
@@ -26,27 +13,29 @@ body {
     margin-bottom: 30px;
 }
 .header-text{
+    padding: 30px;
     margin-top: 200px;
 }
 .header-text h2 {
+    color: white;
     font-size: 2rem;
+    
 }
 .header-text a {
-
-    color: var(--accent-color);
+    color: #a3ff00;
     text-decoration: none;
     font-size: 0.9rem;
 }
 .slider-container {
     display: flex;
+    padding: 30px;
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none; 
 }
 .project-card {
-    min-width: calc(33.333% - 14px);
-    background: var(--card-bg);
+    background: linear-gradient(to bottom, #3f3f3f 50%, #000000 100%);
     border-radius: 20px;
     overflow: hidden;
     flex-shrink: 0;
@@ -72,14 +61,14 @@ body {
     line-height: 1.4;
  }
 .header-text-wyme{
-    margin-top: 200px;
+    padding: 30px;
+    margin-top: 100px;
 }
 .header-text-wyme h2 {
     font-size: 2rem;
 }
 .header-text-wyme a {
-
-    color: var(--accent-color);
+    color: #a3ff00;
     text-decoration: none;
     font-size: 0.9rem;
 }
