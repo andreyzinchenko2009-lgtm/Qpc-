@@ -1,7 +1,10 @@
 body {
+    display: flex;
+    flex-direction: column;
     background: linear-gradient(to bottom, #1a1a1a 0%, #000000 100%);
     color: white;
     font-family: sans-serif;
+    min-height: 100vh;
     margin: 0;
     overflow-x: hidden;
 }
@@ -9,53 +12,21 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
 .navbar {
-    background-color: #121212; 
-    height: 80px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #333;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-.nav-gol {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 0.2rem 2rem;
+  background: #1a1a1a !important; 
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
+  transition: all 0.3s ease;
 }
-.nav-logo {
-    color: #fff;
-    font-size: 24px;
-    font-weight: 800;
-    text-decoration: none;
-    letter-spacing: 1px;
+.navbar-brand{
+  color: #fff;
 }
-.nav-links {
-    display: flex;
-    list-style: none; 
+.nav-link {
+  color: white;
 }
-
-.nav-links li {
-    margin: 0 20px;
-}
-
-.nav-links a {
-    color: #adadad;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: 500;
-    transition: color 0.3s ease;
-}
-.nav-links a:hover {
-    color: #fff;
-}
-
 .carousel-item img {
     width: 100%;
     height: 500px;
@@ -77,38 +48,41 @@ body {
     transform: translateY(0);
 }
 .PC-container {
-  position: absolute;
-  right: 10px;
-  bottom: -300px;
+    position: absolute;
+    right: 10px;
+    bottom: -300px;
 }
 .Mades-qpc {
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-  color: #fff;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
 }
 .dropdown {
   position: relative;
 }
 .dropdown-menu {
-  display: none; 
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: rgb(83, 83, 83);
-  min-width: 160px;
-  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-  z-index: 1;
-  list-style: none;
-  padding: 10px 0;
-  margin: 0;
+    display: none; 
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: rgb(83, 83, 83);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 10px 0;
+    margin: 0;
 }
 .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
 .dropdown-item {
-  color: black;
-  padding: 8px 16px;
-  text-decoration: none;
-  display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+}
+.content-wrapper {
+  flex: 1; /* Це змушує блок розтягуватися і займати все вільне місце */
 }
