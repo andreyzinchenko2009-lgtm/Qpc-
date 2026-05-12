@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
@@ -13,12 +13,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/mades.css">
-    <link rel="stylesheet" href="/css/whyme.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/backtotop-down.css">
-    <link rel="stylesheet" href="/css/cards.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mades.css">
+    <link rel="stylesheet" href="./css/whyme.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/backtotop-down.css">
+    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/carouselqpc.css">
 
 </head>
 <body>
@@ -34,7 +35,7 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
           <a class="nav-link" href="#">Головна</a>
-          <a class="nav-link" href="#">Зібрати</a>
+          <a class="nav-link" href="/html/projects.html">Проекти</a>
           <a class="nav-link" href="#">Детальніше</a>
         </div>
       </div>
@@ -51,20 +52,20 @@
 
   <div class="carousel-inner">
     <div class="carousel-item active">
-  <img src="/image/carousel-first-item.jpg" class="d-md-block w-100" alt="Перший слайд">
+  <img src="./image/carousel-first-item.jpg" class="d-md-block w-100" alt="Перший слайд">
 
   <div class="carousel-caption d-none d-md-block">
     <h5>Найкраща збірка</h5>
   </div>
 </div>
     <div class="carousel-item">
-      <img src="/image/carousel-second-item.jpg" class="d-block w-100" alt="другий слайд">
+      <img src="./image/carousel-second-item.jpg" class="d-block w-100" alt="другий слайд">
       <div class="carousel-caption d-none d-md-block">
         <h5>Вигідні ціни</h5>
       </div>
     </div>
     <div class="carousel-item">
-      <img src="/image/carousel-third-item.jpg" class="d-block w-100" alt="третій слайд">
+      <img src="./image/carousel-third-item.jpg" class="d-block w-100" alt="третій слайд">
       <div class="carousel-caption d-none d-md-block">
         <h5>Якісне обслуговування</h5>
       </div>
@@ -80,30 +81,82 @@
   </button>
 </div>
 
-<div class="Mades-qpc">
-  <h1 style="font-family: Dela Gothic One, sans-serif;">Готові збірки</h1>
-</div>
+<div id="qpcCarousel" class="carousel slide" data-bs-interval="false">
+  <div class="carousel-inner">
 
-<!-- Карточки -->
-<div class="Card-conteiner">
-<div class="PC-card" style="width: 18rem;">
-  <img src="/image/PC1.png" class="card-img-top" alt="Карточка 1">
-    <h5 class="card-title">Arctic Storm</h5>
-    <p class="card-text">Ця флагманська біла збірка на базі RTX 4090 та Core i9 забезпечує максимальну продуктивність у 4K, поєднуючи передове рідинне охолодження з бездоганною панорамною естетикою.</p>
-    <h6 class="card-price">45000грн</h6>
+    <div class="carousel-item active">
+      <div class="carousel-container-qpc">
+        <div class="carousel-slide-qpc">
+          <div class="info-card-qpc">
+            <h2 style="font-family: 'Dela Gothic One', sans-serif;">Arctic Storm</h2>
+            <p>Ця флагманська біла збірка на базі RTX 4090 та Core i9 забезпечує максимальну продуктивність у 4K, поєднуючи передове рідинне охолодження з бездоганною панорамною естетикою.</p>
+            <button class="btn-more-qpc">Детальніше</button>
+            <div class="custom-nav-qpc">
+              <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              
+              <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="image-section-qpc">
+            <img src="./image/PC1.png" alt="Arctic Storm">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-container-qpc">
+        <div class="carousel-slide-qpc">
+          <div class="info-card-qpc">
+            <h2 style="font-family: 'Dela Gothic One', sans-serif;">Eclipse</h2>
+            <p>Ця надійна збірка має шестиядерний процесор i5-12400F, відеокарту RTX 3060, 16 ГБ DDR4 ОЗП в чорному корпусі із загартованим склом — стабільність та стриманість для геймінгу.</p>
+            <button class="btn-more-qpc">Детальніше</button>
+            
+            <div class="custom-nav-qpc">
+              <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="image-section-qpc">
+            <img src="./image/PC2.png" alt="Eclipse">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <div class="carousel-container-qpc">
+        <div class="carousel-slide-qpc">
+          <div class="info-card-qpc">
+            <h2 style="font-family: 'Dela Gothic One', sans-serif;">Spirit</h2>
+            <p>Збалансована збірка на базі GTX 1660 Super — ідеальний вхід у світ геймінгу. Темний лаконічний корпус забезпечить стабільну роботу в популярних хітах та робочих задачах.</p>
+            <button class="btn-more-qpc">Детальніше</button>
+            
+            <div class="custom-nav-qpc">
+              <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="prev">
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button class="nav-arrow-qpc" data-bs-target="#qpcCarousel" data-bs-slide="next">
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+          </div>
+          <div class="image-section-qpc">
+            <img src="./image/PC3.png" alt="Eclipse">
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <div class="PC-card" style="width: 18rem;">
-    <img src="/image/PC2.png" class="card-img-top" alt="Карточка 1">
-      <h5 class="card-title">Eclipse</h5>
-      <p class="card-text">Ця надійна збірка має шестиядерний процесор i5-12400F, відеокарту RTX 3060, 16 ГБ DDR4 ОЗП в чорному корпусі із загартованим склом — стабільність та стриманість для геймінгу.</p>
-      <h6 class="card-price">45000грн</h6>
-    </div>
-  <div class="PC-card" style="width: 18rem;">
-    <img src="/image/PC3.png" class="card-img-top" alt="Карточка 1">
-      <h5 class="card-title">Spirit</h5>
-      <p class="card-text">Збалансована збірка на базі GTX 1660 Super — ідеальний вхід у світ геймінгу. Темний лаконічний корпус забезпечить стабільну роботу в популярних хітах та робочих задачах.</p>
-      <h6 class="card-price">45000грн</h6>
-    </div>
 </div>
 <!-- Проекти -->
 <section class="projects-section">
@@ -119,7 +172,7 @@
   <div class="slider-container" id="slider">
     <div class="project-card">
       <div class="img-wrapper orange-bg">
-        <img src="/image/PC-carousel.png" alt="">
+        <img src="./image/PC-carousel.png" alt="">
       </div>
       <div class="card-content">
         <p>Проект "Glacier"</p>
@@ -127,7 +180,7 @@
     </div>
     <div class="project-card">
       <div class="img-wrapper green-bg">
-        <img src="/image/PC-carousel2.png" alt="">
+        <img src="./image/PC-carousel2.png" alt="">
       </div>
       <div class="card-content">
         <p>Проект "Arctic Minimalist"</p>
@@ -135,7 +188,7 @@
     </div>
     <div class="project-card">
       <div class="img-wrapper">
-        <img src="/image/PC-carousel3.png" class="card-img-top" alt="">
+        <img src="./image/PC-carousel3.png" class="card-img-top" alt="">
       </div>
       <div class="card-content">
         <p>Проект "Blizzard"</p>
@@ -149,12 +202,12 @@
     <p>Ми працюємо лише з найкращими виробниками комплектуючих, щоб забезпечити нашим клієнтам найвищу якість та надійність їхніх ПK. Від процесорів до відеокарт, ми вибираємо компоненти від провідних брендів, щоб гарантувати відмінну продуктивність та довговічність кожного зібраного нами комп'ютера.Кожна деталь проходить стрес-тести перед установкою. </p>
   </div>
   <div class="main-wyme">
-    <img src="/image/wyme.png" ...>
+    <img src="./image/wyme.png" ...>
   </div>
 </div>
 <div class="wyme-section">
    <div class="main-wyme-second">
-    <img src="/image/wyme2.png" class="main-wyme-second" alt="...">
+    <img src="./image/wyme2.png" class="main-wyme-second" alt="...">
   </div>
   <div class="header-text-wyme-second">
     <h2>Професійна збірка</h2>
@@ -167,7 +220,7 @@
     <p>Ми працюємо за принципом повної прозорості: ви отримуєте детальну специфікацію з ціною кожної деталі. На відміну від мас-маркет збірок, ми не використовуємо пломби, що забороняють відкривати корпус. Ми заохочуємо ваш інтерес до заліза і завжди допоможемо з майбутнім апгрейдом, щоб ваш ПК залишався актуальним роками. </p>
   </div>
   <div class="main-wyme-third">
-    <img src="/image/wyme3.png" ...>
+    <img src="./image/wyme3.png" ...>
   </div>
 </div>
 <footer class="site-footer">
@@ -233,6 +286,11 @@ document.addEventListener("DOMContentLoaded", function() {
             });
         }
     });
+});
+const myCarouselElement = document.querySelector('#qpcCustomCarousel');
+const carousel = new bootstrap.Carousel(myCarouselElement, {
+  interval: 3000, // время автоматической прокрутки
+  touch: true
 });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
