@@ -14,29 +14,147 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/mades.css">
-    <link rel="stylesheet" href="./css/whyme.css">
-    <link rel="stylesheet" href="./css/footer.css">
-    <link rel="stylesheet" href="./css/backtotop-down.css">
-    <link rel="stylesheet" href="./css/cards.css">
+    <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/project-cards.css">
 
 </head>
 <body>
 <button id="scrollBtn" class="btn btn-primary btn-lg rounded-circle shadow" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
     <i class="fa-solid fa-arrow-down" id="scrollIcon"></i>
 </button>
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">qPC</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
+  <div class="container">
+    <a class="navbar-brand" href="#">q<span>PC</span></a>
+    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
           <a class="nav-link" href="/index.html">Головна</a>
-          <a class="nav-link" href="/projects.html">Проекти</a>
-          <a class="nav-link" href="/about.html">Детальніше</a>
-        </div>
-      </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/projects.html">Збірки </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Детальніше</a>
+        </li>
+        <li class="nav-item ms-lg-3">
+          <a class="nav-link btn-contact" href="tel:+380937977117">Зв'язатися</a>
+        </li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
+Блок з проектами
+<aside>
+<div class="projects-group mb-5">
+  <div class="projects-header">
+    <h2>Обрати категорію</h2>
+  </div>
+  <div class="PC-class">
+    <div class="PC-class__item">
+      <h3>Бюджетна збірка</h3>
+    </div>
+    <div class="PC-class__item">
+      <h3>Геймерська збірка</h3>
+    </div>
+    <div class="PC-class__item">
+      <h3>Професійна збірка</h3>
+    </div>
+  </div>
+</div>
+<div class="projects-group">
+  <div class="projects-header">
+    <h2>Наші проекти</h2>
+  </div>
+  <div class="PC-class">
+    <div class="PC-class__item"><h3>Cyberion</h3></div>
+    <div class="PC-class__item"><h3>Arctic</h3></div>
+    <div class="PC-class__item"><h3>Base-X</h3></div>
+    <div class="PC-class__item"><h3>Lite</h3></div>
+    <div class="PC-class__item"><h3>Rift</h3></div>
+  </div>
+</div>
+</aside>
+<!-- 1 карточка -->
+<div class="projects-grid">
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./image/pc-projects.png" alt="Glacier">
+        </div>
+        <div class="project-info">
+            <h5 class="project-title">Glacier</h5>
+            <p class="project-text">Потужна геймерська збірка для максимального ігрового досвіду.</p> 
+            <button class="project-link btn-details">Детальніше</button>
+            <div class="project-details">
+                <ul>
+                    <li>GPU: RTX 4080</li>
+                    <li>CPU: Intel Core i7-14700K (5.6 GHz Turbo)</li>
+                    <li>RAM: 32GB DDR5</li>
+                    <li>2TB Samsung 990 Pro PCIe 4.0 NVMe SSD</li>
+                    <li>PSU: 850W Corsair RM850 White (80+ Gold Certified)</li>
+                    <li>Cooling: Corsair iCUE H150i Elite Capellix Liquid CPU Cooler</li>
+                    <li>Motherboard: ASUS ROG STRIX Z790-A GAMING WIFI</li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+
+    <!-- 2 карточка -->
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./image/pc-projects2.png" alt="Glacier">
+        </div>
+        <div class="project-info">
+            <h5 class="project-title">Arctic Minimalist</h5>
+            <p class="project-text">Потужна геймерська збірка для максимального ігрового досвіду.</p> 
+            <button class="project-link btn-details">Детальніше</button>
+            <div class="project-details">
+                <ul>
+                    <li>GPU: RTX 4080 SUPER</li>
+                    <li>CPU: i9-14900KS</li>
+                    <li>RAM: 64GB Corsair Dominator Titanium White DDR5-6000</li>
+                    <li>Storage: 4TB Western Digital Black SN850X Gen4 NVMe</li>
+                    <li>PSU: 1000W ASUS ROG Thor Platinum II</li>
+                    <li>Cooling: ASUS ROG Ryujin II 360 AIO Liquid Cooler</li>
+                    <li>Motherboard: ASUS ROG Maximus Z790 Hero</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  <!-- 3 карточка -->
+    <div class="project-card">
+        <div class="project-image">
+            <img src="./image/pc-projects3.png" alt="Glacier">
+        </div>
+        <div class="project-info">
+            <h5 class="project-title">Blizzard</h5>
+            <p class="project-text">Потужна геймерська збірка для максимального ігрового досвіду.</p> 
+            <button class="project-link btn-details">Детальніше</button>
+            <div class="project-details">
+                <ul>
+                    <li>GPU: RTX 4080</li>
+                    <li>CPU: i7-13700K</li>
+                    <li>RAM: 32GB DDR5</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.btn-details').forEach(button => {
+        button.addEventListener('click', function() {
+            const card = this.closest('.project-card');
+            const details = card.querySelector('.project-details');
+            details.classList.toggle('show');
+            this.textContent = details.classList.contains('show') ? 'ЗГОРНУТИ' : 'ДЕТАЛЬНІШЕ';
+        });
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="./js/backtotop.js"></script>
+</body>
+</html>
