@@ -1,19 +1,27 @@
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 25px;
     padding-left: 280px; 
+    padding-right: 20px;
     margin-top: 70px;
-    align-items: start; /* Щоб картки не розтягувалися при відкритті сусідніх */
+    align-items: start; 
 }
-
 .project-card {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: all 0.3s ease;
-    max-width: 240px;
+    width: 100%; 
+    max-width: 300px; 
+    margin: 0 auto;
+    
+}   
+.project-price {
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: auto; /* Притискає ціну до нижнього краю картки */
 }
-
 .project-info {
     padding: 15px;
 }
@@ -60,6 +68,8 @@
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
+    margin-top: auto; /* Притискає кнопку "Детальніше" до нижнього краю картки */
+    align-self: flex-start;
 }
 
 .project-details {
