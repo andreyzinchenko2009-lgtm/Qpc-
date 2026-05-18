@@ -1,0 +1,73 @@
+
+.Glacier-project {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.project-title {
+    font-family: 'Dela Gothic One', cursive;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+
+.project-gallery-vertical {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: start;
+}
+
+.glacier-img-min {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    filter: grayscale(100%);
+    opacity: 0.5;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid transparent;
+}
+
+.thumb:hover {
+    opacity: 0.8;
+    filter: grayscale(0%);
+    transform: translateX(5px);
+}
+
+.thumb.active {
+    filter: grayscale(0%);
+    opacity: 1;
+    border-color: #ffffff;
+}
+.main-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#main-display {
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    border-radius: 15px;
+    transition: opacity 0.3s ease-in-out, transform 0.5s ease;
+}
+
+/* Анимация смены картинки */
+.img-fade {
+    opacity: 0;
+    transform: scale(0.98);
+}
