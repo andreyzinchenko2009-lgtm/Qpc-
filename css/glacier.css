@@ -178,21 +178,38 @@ ul {
   padding: 0;            /* Убирает левый отступ списка (по желанию) */
   margin: 0;             /* Убирает внешние отступы (по желанию) */
 }
-.glacier-characteristics li {
-    font-size: 14px;
-    font-weight: 400;
-    padding: 8px 18px;
-    border-radius: 6px;
-    border: none;
-    background: transparent;
-    color: #666666;
-    transition: all 0.2s ease;
-    box-shadow: none !important;
+.glacier-extra-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+    gap: 20px;
+    width: 100%;
 }
 .glacier-characteristics li:hover {
     color: #ffffff;
 }
+.glacier-extra-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
 
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 20px;
+    max-width: 200px;
+    flex-direction: row;
+    white-space: normal; 
+}
+
+.info-item span {
+    line-height: 1.2;
+    flex: 1; 
+}
 @media (max-width: 992px) {
     .project-content-layout {
         flex-direction: column;
