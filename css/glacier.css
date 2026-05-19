@@ -170,6 +170,28 @@ body {
 .btn-add-to-cart:active {
     transform: scale(0.98);
 }
+.glacier-characteristics {
+    margin-top: 30px;
+}
+ul {
+  list-style-type: none; /* Убирает маркеры */
+  padding: 0;            /* Убирает левый отступ списка (по желанию) */
+  margin: 0;             /* Убирает внешние отступы (по желанию) */
+}
+.glacier-characteristics li {
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    color: #666666;
+    transition: all 0.2s ease;
+    box-shadow: none !important;
+}
+.glacier-characteristics li:hover {
+    color: #ffffff;
+}
 
 @media (max-width: 992px) {
     .project-content-layout {
