@@ -257,9 +257,20 @@ ul {
 
 }
 @media (max-width: 992px) {
+    body {
+        padding-top: 96px;
+    }
+
+    .Glacier-project {
+        max-width: 100%;
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
     .project-content-layout {
         flex-direction: column;
         align-items: center;
+        gap: 28px;
     }
     .project-card-custom {
         max-width: 100%;
@@ -272,14 +283,34 @@ ul {
 }
 
 @media (max-width: 768px) {
+    body {
+        padding-top: 88px;
+    }
+
     .project-title {
-        font-size: 2.2rem;
+        font-size: clamp(1.8rem, 12vw, 2.4rem);
         text-align: center !important;
+        margin-bottom: 24px;
     }
 
     .glacier-options {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         justify-content: center;
         width: 100%;
+        gap: 8px;
+        margin-bottom: 28px;
+    }
+
+    .glacier-options .btn {
+        width: 100%;
+        min-height: 42px;
+        padding: 9px 10px;
+        white-space: normal;
+    }
+
+    .glacier-options .btn-buy {
+        margin-left: 0;
     }
 
     .project-gallery-vertical {
@@ -291,10 +322,63 @@ ul {
     .glacier-img-min {
         flex-direction: row;
         justify-content: center;
+        width: 100%;
+        overflow-x: auto;
+        padding-bottom: 4px;
     }
 
-    .glacier-img-min .thumb {
+    .glacier-img-min .thumb,
+    .glacier-img-min video.thumb {
         width: 65px;
         height: 65px;
+        flex: 0 0 auto;
+    }
+
+    .main-image-wrapper,
+    #main-display-wrapper {
+        width: 100%;
+        max-height: none;
+    }
+
+    #main-display,
+    #main-display-wrapper img.main-img,
+    #main-display-wrapper video.main-video,
+    #main-display-img,
+    #main-display-video {
+        max-height: 430px;
+        width: 100% !important;
+        object-fit: contain;
+    }
+
+    .glacier-price h3 {
+        font-size: 1.55rem;
+    }
+
+    .btn-add-to-cart {
+        width: 100%;
+        min-height: 46px;
+    }
+
+    .glacier-extra-info {
+        margin-top: 70px;
+        margin-bottom: 80px;
+        justify-content: flex-start;
+    }
+
+    .info-item {
+        max-width: none;
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .glacier-options {
+        grid-template-columns: 1fr;
+    }
+
+    .glacier-img-min .thumb,
+    .glacier-img-min video.thumb {
+        width: 58px;
+        height: 58px;
     }
 }
