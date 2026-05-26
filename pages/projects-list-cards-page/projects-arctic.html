@@ -17,10 +17,12 @@
     <link rel="stylesheet" href="/css/projects.css">
     <link rel="stylesheet" href="/css/project-cards.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="../../css/backtotop-down.css">
+    <link rel="stylesheet" href="../../css/home-redesign.css">
 
 </head>
 <body>
-<button id="scrollBtn" class="btn btn-primary btn-lg rounded-circle shadow" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+<button id="scrollBtn" class="scroll-action" aria-label="Прокрутити сторінку">
     <i class="fa-solid fa-arrow-down" id="scrollIcon"></i>
 </button>
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
@@ -40,7 +42,7 @@
           <a class="nav-link active" href="/projects.html">Збірки </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Детальніше</a>
+          <a class="nav-link" href="#">Порівняння</a>
         </li>
         <li class="nav-item ms-lg-3">
           <a class="nav-link btn-contact" href="tel:+380937977117">Зв'язатися</a>
@@ -84,11 +86,7 @@
 <div class="projects-grid">
     <!-- 1 карточка - Glacier -->
     <div class="project-card">
-        <div class="project-image">
-            <a href="/pages/projects-pc-cards/glacier.html" target="_blank">
-            <img src="/image/pc-projects.png" alt="Glacier">
-            </a>
-        </div>
+        <div class="project-image"><a class="project-image-link" href="/pages/projects-pc-cards/glacier.html"><img src="/image/pc-projects.png" alt="Glacier"></a></div>
         <div class="project-info">
             <h5 class="project-title">Glacier</h5>
             <p class="project-text">Максимальний ігровий досвід.</p> 
@@ -107,11 +105,7 @@
 
     <!-- 2 карточка - Arctic Minimalist -->
     <div class="project-card">
-        <div class="project-image">
-          <a href="/pages/projects-pc-cards/arctic-minimalist/arctic-minimalist.html" target="_blank">  
-            <img src="/image/pc-projects2.png" alt="Arctic Minimalist">
-          </a>
-        </div>
+        <div class="project-image"><a class="project-image-link" href="/pages/projects-pc-cards/arctic-minimalist/arctic-minimalist.html"><img src="/image/pc-projects2.png" alt="Arctic Minimalist"></a></div>
         <div class="project-info">
             <h5 class="project-title">Arctic Minimalist</h5>
             <p class="project-text">Естетика та ультра-потужність.</p> 
@@ -130,11 +124,7 @@
 
     <!-- 3 карточка - Blizzard -->
     <div class="project-card">
-        <div class="project-image">
-              <a href="/pages/projects-pc-cards/blizzard/blizzard.html" target="_blank">
-            <img src="/image/pc-projects3.png" alt="Blizzard">
-            </a>
-        </div>
+        <div class="project-image"><a class="project-image-link" href="/pages/projects-pc-cards/blizzard/blizzard.html"><img src="/image/pc-projects3.png" alt="Blizzard"></a></div>
         <div class="project-info">
             <h5 class="project-title">Blizzard</h5>
             <p class="project-text">Надійність у кожному кадрі.</p> 
@@ -153,11 +143,7 @@
 
     <!-- 4 карточка - Frost Flow -->
     <div class="project-card">
-        <div class="project-image">
-              <a href="/pages/projects-pc-cards/frost flow/frost-flow.html" target="_blank">
-            <img src="/image/pc-projectst4.png" alt="Frost Flow">
-            </a>
-        </div>
+        <div class="project-image"><a class="project-image-link" href="/pages/projects-pc-cards/frost flow/frost-flow.html"><img src="/image/pc-projectst4.png" alt="Frost Flow"></a></div>
         <div class="project-info">
             <h5 class="project-title">Frost Flow</h5>
             <p class="project-text">Оптимальний баланс ціни та швидкості.</p> 
@@ -176,11 +162,7 @@
 
     <!-- 5 карточка - Ice Fragment -->
     <div class="project-card">
-        <div class="project-image">
-              <a href="/pages/projects-pc-cards/ice-fragment/ice-fragment.html" target="_blank"> 
-                <img src="/image/pc-projects5.png" alt="Ice Fragment">
-              </a>
-        </div>
+        <div class="project-image"><a class="project-image-link" href="/pages/projects-pc-cards/ice-fragment/ice-fragment.html"><img src="/image/pc-projects5.png" alt="Ice Fragment"></a></div>
         <div class="project-info">
             <h5 class="project-title">Ice Fragment</h5>
             <p class="project-text">Гармонія та потужність майбутнього.</p> 
@@ -199,9 +181,7 @@
 
     <!-- 6 карточка - Frost Mini -->
     <div class="project-card">
-        <div class="project-image">
-            <img src="/image/pc-projects6.png" alt="Frost Mini">
-        </div>
+        <div class="project-image"><a class="project-image-link" href="/pages/projects-pc-cards/frost-mini/frost-mini.html"><img src="/image/pc-projects6.png" alt="Frost Mini"></a></div>
         <div class="project-info">
             <h5 class="project-title">Frost Mini</h5>
             <p class="project-text">Швидкість у компактному ITX корпусі.</p> 
@@ -219,9 +199,7 @@
     </div>
 <!-- 7 карточка -->
     <div class="project-card">
-        <div class="project-image">
-            <img src="/image/pc-projects7.png" alt="Arctic Storm">
-        </div>
+        <div class="project-image"><a class="project-image-link" href="/pages/projects-pc-cards/arctic-storm/arctic-storm.html"><img src="/image/pc-projects7.png" alt="Arctic Storm"></a></div>
         <div class="project-info">
             <h5 class="project-title">Arctic Storm</h5>
             <p class="project-text">Комфорт та потужність.</p> 
@@ -281,6 +259,6 @@
     });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-<script src="./js/backtotop.js"></script>
+<script src="../../js/backtotop.js"></script>
 </body>
 </html>

@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="/css/projects.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/project-cards.css">
-    <link rel="stylesheet" href="/css/footer.css">  
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="../../css/backtotop-down.css">
+    <link rel="stylesheet" href="../../css/home-redesign.css">  
 </head>
 <body>
 
-<button id="scrollBtn" class="btn btn-primary btn-lg rounded-circle shadow" style="position: fixed; bottom: 20px; right: 20px; z-index: 1000; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center;">
+<button id="scrollBtn" class="scroll-action" aria-label="Прокрутити сторінку">
     <i class="fa-solid fa-arrow-down" id="scrollIcon"></i>
 </button>
 
@@ -30,7 +32,7 @@
       <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a class="nav-link" href="/index.html">Головна</a></li>
         <li class="nav-item"><a class="nav-link active" href="/projects.html">Збірки</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Детальніше</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Порівняння</a></li>
         <li class="nav-item ms-lg-3"><a class="nav-link btn-contact" href="tel:+380937977117">Зв'язатися</a></li>
       </ul>
     </div>
@@ -61,7 +63,7 @@
 <div class="projects-grid">
     <!-- 10 карточка - Dark Mesh Elite Pro -->
     <div class="project-card">
-        <div class="project-image"><img src="/image/pc-projects10.png" alt="Dark Mesh Elite Pro"></div>
+        <div class="project-image"><a class="project-image-link" href="/pages/projects-pc-cards/dark-mesh-elite-pro/dark-mesh-elite-pro.html"><img src="/image/pc-projects10.png" alt="Dark Mesh Elite Pro"></a></div>
         <div class="project-info">
             <h5 class="project-title">Dark Mesh Elite Pro</h5>
             <p class="project-text">Обладнання високої продуктивності.</p> 
@@ -197,6 +199,6 @@
     });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-<script src="./js/backtotop.js"></script>
+<script src="../../js/backtotop.js"></script>
 </body>
 </html>

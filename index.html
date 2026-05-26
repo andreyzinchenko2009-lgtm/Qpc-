@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="uk">
 <head>
     <meta charset="UTF-8">
@@ -20,8 +20,8 @@
 </head>
 <body>
     <button id="scrollBtn" class="scroll-action" aria-label="Прокрутити сторінку">
-        <i class="fa-solid fa-arrow-down" id="scrollIcon"></i>
-    </button>
+    <i class="fa-solid fa-arrow-down" id="scrollIcon"></i>
+</button>
 
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-custom">
         <div class="container">
@@ -34,7 +34,7 @@
                 <ul class="navbar-nav ms-auto align-items-lg-center">
                     <li class="nav-item"><a class="nav-link active" href="./index.html">Головна</a></li>
                     <li class="nav-item"><a class="nav-link" href="./projects.html">Збірки</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#advantages">Переваги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./comparison.html">Порівняння</a></li>
                     <li class="nav-item ms-lg-3"><a class="nav-link btn-contact" href="tel:+380937977117">Зв'язатися</a></li>
                 </ul>
             </div>
@@ -155,7 +155,7 @@
                 <div class="header-text">
                     <p class="eyebrow">Портфоліо</p>
                     <h2 id="projects-title">Виконані проєкти</h2>
-                    <a href="./pages/projects-pc-cards/glacier.html">Гранд-проєкт Glacier</a>
+                    <a href="./pages/projects-list-cards-page/projects-arctic.html">Гранд-проєкт Arctic</a>
                 </div>
                 <div class="header-text">
                     <a href="./projects.html">Усі проєкти</a>
@@ -271,36 +271,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            const scrollBtn = document.getElementById("scrollBtn");
-            const scrollIcon = document.getElementById("scrollIcon");
-
-            window.addEventListener("scroll", function() {
-                if (window.pageYOffset > 300) {
-                    scrollIcon.classList.remove("fa-arrow-down");
-                    scrollIcon.classList.add("fa-arrow-up");
-                    scrollBtn.dataset.direction = "up";
-                } else {
-                    scrollIcon.classList.remove("fa-arrow-up");
-                    scrollIcon.classList.add("fa-arrow-down");
-                    scrollBtn.dataset.direction = "down";
-                }
-            });
-
-            scrollBtn.addEventListener("click", function() {
-                if (this.dataset.direction === "up") {
-                    window.scrollTo({ top: 0, behavior: "smooth" });
-                    return;
-                }
-
-                window.scrollTo({
-                    top: document.documentElement.scrollHeight,
-                    behavior: "smooth"
-                });
-            });
-        });
-    </script>
     <script src="./scrollanimforgemini.js"></script>
+<script src="./js/backtotop.js"></script>
 </body>
 </html>
